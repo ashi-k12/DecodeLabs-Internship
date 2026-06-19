@@ -1,6 +1,8 @@
 # DecodeLabs-Internship
 Deliverables for Data Analytics Project
+
 Dataset Included
+
 File: Cleaned Dataset for Data Analytics.xlsx
 
 Description: Final cleaned dataset prepared for analytics tasks (customer orders,Customer ID, Order ID, Tracking Numbers, payment methods, coupons, referral sources, and total prices).
