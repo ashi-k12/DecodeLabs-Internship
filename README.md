@@ -52,5 +52,4 @@ This repository contains three structured projects showcasing data cleaning, exp
 
 ##  Conclusion
 This repository demonstrates an end-to-end analytics workflow
-- **
 
