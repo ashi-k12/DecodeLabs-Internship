@@ -1,51 +1,56 @@
-# DecodeLabs-Internship
-Deliverables for Data Analytics Project
+# Decodelabs Internship Projects
 
-Dataset Included
+Deliverables for Data Analytics Internship  
+This repository contains three structured projects showcasing data cleaning, exploratory analysis, and advanced SQL integration with Python.
 
-File: Cleaned Dataset for Data Analytics.xlsx
+---
 
-## Project Overview
-This repository contains the cleaned dataset and documentation for my Data Analytics internship project. It demonstrates data cleaning, formatting, and preparation for analysis.
+##  Project 1: Data Cleaning & Preparation
+- Imported raw dataset and performed cleaning (duplicates removed, missing values handled, errors corrected).
+- Standardized column names and formats for consistency.
+- Created a **cleaned dataset** ready for analytics tasks.
+- Documented cleaning steps in README for transparency.
 
-## Dataset Included
-- File: `Cleaned Dataset for Data Analytics.xlsx`
-- Description: Final cleaned dataset prepared for analytics tasks (customer orders, payment methods, coupons, referral sources, and total prices).
+**Key Outcome:** A reliable dataset of customer orders, payment methods, coupons, and referral sources — foundation for further analysis.
 
-Description: Final cleaned dataset prepared for analytics tasks (customer orders,Customer ID, Order ID, Tracking Numbers, payment methods, coupons, referral sources, and total prices).
+---
 
-Cleaning Steps:
+## Project 2: Exploratory Data Analysis (EDA)
+- Conducted descriptive statistics and distribution analysis.
+- Visualized correlations between variables (e.g., spend vs. items in cart).
+- Identified customer behavior patterns and product trends.
+- Created a Jupyter Notebook with structured insights and visualizations.
 
-Converted all General formats to proper data types:
+**Key Outcome:** Clear understanding of dataset characteristics and initial business insights.
 
-1-IDs (OrderID, CustomerID, TrackingNumber) → Text
+---
 
-2-Dates → Date
+## Project 3: Advanced SQL Data Analysis
+- Loaded dataset (1189 records) into SQLite and validated schema.
+- Derived metrics: **TotalSpend, AvgItemSpend, CouponUsed**.
+- Performed aggregations: revenue by PaymentMethod, referral source averages.
+- Applied **HAVING filters** to highlight high-value referral sources.
+- Implemented **window functions** to rank customers by spend.
+- Conducted **time-series analysis** for monthly sales trends.
+- Segmented customers into High/Medium/Low value tiers.
+- Analyzed coupon effectiveness and churn (Delivered vs Returned orders).
+- Visualized results with bar charts and line plots.
+- Documented each query with Markdown for clarity and storytelling.
 
-3-Quantities → Whole Number (0 decimals)
+**Key Outcome:** A mini business intelligence report combining SQL queries, Python integration, and visual insights.
 
-4-Prices → Number (2 decimals)
+---
 
-5-Categorical fields (PaymentMethod, OrderStatus, Coupon, ReferralSource) → Text
-Standardized categorical values:
+##  Repository Contents
+- `Cleaned Dataset for Data Analytics.xlsx` → Source dataset  
+- `EDA_PROJECT1_Cleaning.ipynb` → Data cleaning notebook   
+- `EDA_PROJECT2.ipynb` → Exploratory Data Analysis notebook  
+- `EDA_PROJECT3_SQL_Analysis.ipynb` → Advanced SQL analysis notebook  
+- `README.md` → Documentation and project summaries
 
-6-PaymentMethod → Credit Card, Debit Card, Cash, Online, Gift Card
+---
 
-7-OrderStatus → Shipped, Delivered, Cancelled, Returned, Pending
-
-8-Coupon → NoCoupon, SAVE10, FREESHIP, WINTER15
-
-9-ReferralSource → Instagram, Facebook, Email, Google, Referral
-
-Ensured logical consistency:
-
-10-TotalPrice = Quantity × UnitPrice (rounded to 2 decimals)
-
-11-TrackingNumber present only for Shipped/Delivered orders
-
-12-Removed helper columns and ensured final dataset is analysis‑ready.
-## How to Use
-- Open the dataset in Excel for quick inspection.  
-- Import into Power BI or Tableau for visualization.  
-- Use Python (pandas) or SQL for deeper analysis.  
+##  Conclusion
+This repository demonstrates an end-to-end analytics workflow.
+- **
 
